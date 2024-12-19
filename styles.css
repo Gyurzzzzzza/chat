@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+}
+
+header {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message.reply {
+    flex-direction: row-reverse;
+}
+
+.message .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.message.reply .avatar {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.message .avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.message .text {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.message.reply .text {
+    background: #d1e7dd;
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: orange;
+    padding: 15px;
+}
+
+.sidebar h2, .sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+.participants {
+    margin-top: 10px;
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.participant img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
